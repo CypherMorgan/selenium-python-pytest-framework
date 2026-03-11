@@ -1,0 +1,65 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Pytest cache
+.pytest_cache/
+
+# Logs
+logs/
+*.log
+
+# Test reports
+reports/
+*.html
+
+# Coverage reports
+.coverage
+htmlcov/
+
+# Environment variables
+.env
+
+# Temporary files
+*.tmp
+*.temp
+
+# Selenium downloads or driver leftovers
+*.exe
+
+# Mac files
+.AppleDouble
+.LSOverride
+
+# Windows files
+ehthumbs.db
+Desktop.ini
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+
+# Build files
+build/
+dist/
+*.egg-info/
+
+# pytest artifacts
+.cache/
+
+# Local config overrides (if you create them later)
+config/local_config.json

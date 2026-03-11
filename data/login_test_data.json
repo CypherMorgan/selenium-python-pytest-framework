@@ -1,0 +1,19 @@
+{
+    "login_tests": [
+      {
+        "username": "tomsmith",
+        "password": "SuperSecretPassword!",
+        "expected": "success"
+      },
+      {
+        "username": "wrong_user",
+        "password": "wrong_pass",
+        "expected": "failure"
+      },
+      {
+        "username": "",
+        "password": "test123",
+        "expected": "failure"
+      }
+    ]
+  }
