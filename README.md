@@ -161,7 +161,7 @@ are stored here to avoid hardcoding values throughout the code.
 Clone the repository:
 
 ```id="ekc4ty"
-git clone https://github.com/<your-username>/selenium-python-pytest-framework.git
+git clone https://github.com/CypherMorgan/selenium-python-pytest-framework.git
 ```
 
 Navigate into the project directory:
