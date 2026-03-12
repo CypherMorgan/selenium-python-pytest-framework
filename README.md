@@ -1,5 +1,9 @@
 # Selenium Python PyTest Automation Framework
 
+![Python](https://img.shields.io/badge/python-3.x-blue)
+![Selenium](https://img.shields.io/badge/selenium-automation-green)
+![PyTest](https://img.shields.io/badge/pytest-testing-orange)
+
 A simple UI automation framework built using **Selenium WebDriver, Python, and PyTest** following the **Page Object Model (POM)** design pattern.
 
 The goal of this project is to demonstrate how a maintainable and scalable test automation framework can be structured while supporting **data-driven testing, reusable utilities, logging, and reporting**.
