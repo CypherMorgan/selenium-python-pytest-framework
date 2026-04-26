@@ -1,7 +1,7 @@
 import pytest
-from utilities.driver_factory import DriverFactory
-from utilities.config_reader import ConfigReader
-from utilities.screenshot import take_screenshot
+from framework.core.driver_factory import DriverFactory
+from framework.core.config_reader import ConfigReader
+from framework.utils.screenshot import take_screenshot
 
 
 @pytest.fixture(scope="class")

@@ -1,4 +1,4 @@
-from utilities.logger import get_logger
+from framework.utils.logger import get_logger
 
 
 class BaseClass:

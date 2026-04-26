@@ -1,7 +1,7 @@
 import pytest
 from pages.login_page import LoginPage
-from utilities.data_reader import get_login_test_data
-from utilities.base_class import BaseClass
+from framework.core.data_reader import get_login_test_data
+from framework.core.base_class import BaseClass
 
 
 test_data = get_login_test_data()

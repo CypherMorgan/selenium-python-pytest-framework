@@ -2,7 +2,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 
-from utilities.config_reader import ConfigReader
+from framework.core.config_reader import ConfigReader
 
 
 class DriverFactory:
