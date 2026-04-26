@@ -1,4 +1,5 @@
 import allure
+import json
 from framework.api.api_client import APIClient
 
 
@@ -14,9 +15,10 @@ def test_get_users(config):
 
     with allure.step("Send GET request to /users"):
         response = client.get("/users")
+        response_json = response.json()
 
         allure.attach(
-            str(response.json()),
+            json.dumps(response_json, indent=2),
             name="Response Body",
             attachment_type=allure.attachment_type.JSON
         )
@@ -25,4 +27,8 @@ def test_get_users(config):
         assert response.status_code == 200
 
     with allure.step("Validate response contains 'users' key"):
-        assert "users" in response.json()
+        assert "users" in response_json
+
+    with allure.step("Validate users is a list"):
+        assert isinstance(response_json["users"], list)
+        assert len(response_json["users"]) > 0

@@ -7,7 +7,6 @@ logger = get_logger("APIDBTest")
 
 def test_api_user_matches_db(config):
 
-    # API
     base_url = config.get("api", "base_url")
     client = APIClient(base_url)
 
@@ -19,7 +18,6 @@ def test_api_user_matches_db(config):
     api_data = response.json()
     logger.info(f"API Response: {api_data}")
 
-    # DB
     db = DBClient("test_data/test.db")
     db.connect()
 
@@ -33,6 +31,5 @@ def test_api_user_matches_db(config):
 
     logger.info(f"DB Data: {db_data}")
 
-    # Validation
     assert api_data["username"] == db_data[0][0]
     assert api_data["email"] == db_data[0][1]
