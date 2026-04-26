@@ -21,22 +21,35 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-      - name: Install Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "18"
 
-      - name: Install Allure CLI
+      - name: Install Newman & Allure CLI
         run: |
-          npm install -g allure-commandline --save-dev
+          npm install -g newman newman-reporter-html allure-commandline
+
       - name: Start Mock API
         run: |
           nohup uvicorn mock_server.app:app --host 0.0.0.0 --port 8000 &
           sleep 5
 
-      - name: Run tests
+      - name: Run Pytest Tests
         run: |
           pytest tests --env=dev --alluredir=allure-results
+
+      - name: Run Postman Tests
+        run: |
+          newman run postman/Hybrid_QA_API.postman_collection.json \
+          -r html \
+          --reporter-html-export reports/postman_report.html
+
+      - name: Upload Postman Report
+        uses: actions/upload-artifact@v4
+        with:
+          name: postman-report
+          path: reports/postman_report.html
 
       - name: Generate Allure Report
         run: |
