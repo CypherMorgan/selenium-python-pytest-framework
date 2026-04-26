@@ -7,3 +7,5 @@ allure-pytest
 requests
 pyyaml
 webdriver-manager
+fastapi
+uvicorn

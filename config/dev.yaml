@@ -7,4 +7,4 @@ browser:
   implicit_wait: 10
 
 api:
-  base_url: "https://dummyjson.com"
+  base_url: "http://127.0.0.1:8000"
