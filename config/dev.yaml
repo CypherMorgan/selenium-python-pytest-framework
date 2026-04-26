@@ -3,7 +3,7 @@ app:
 
 browser:
   name: "chrome"
-  headless: false
+  headless: true
   implicit_wait: 10
 
 api:
