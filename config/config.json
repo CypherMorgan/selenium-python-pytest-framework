@@ -1,6 +1,0 @@
-{
-    "base_url": "https://the-internet.herokuapp.com/login",
-    "browser": "chrome",
-    "implicit_wait": 10,
-    "headless": false
-  }
