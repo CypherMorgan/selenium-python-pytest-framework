@@ -1,0 +1,14 @@
+INFO     TestRunner:conftest.py:45 Initializing WebDriver
+INFO     WDM:logger.py:11 ====== WebDriver manager ======
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
+INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117/chromedriver-linux64/chromedriver] found in cache
+INFO     TestRunner:conftest.py:50 Opening URL: https://the-internet.herokuapp.com/login
+INFO     LoginTest:test_login.py:20 Testing login with user: ''
+INFO     LoginTest:test_login.py:21 Test data -> username: '', password: 'test123', expected: 'failure'
+INFO     LoginTest:test_login.py:26 Entering username
+INFO     LoginTest:test_login.py:29 Entering password
+INFO     LoginTest:test_login.py:32 Clicking login button
+INFO     LoginTest:test_login.py:37 Login response message: 'your username is invalid!'
+INFO     LoginTest:test_login.py:59 Login failure validated
+INFO     TestRunner:conftest.py:56 Quitting WebDriver

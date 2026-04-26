@@ -1,0 +1,4 @@
+INFO     DBClient:db_client.py:14 Connecting to DB: test_data/test.db
+INFO     DBClient:db_client.py:18 Executing query: SELECT username, email FROM users WHERE username = ? | params=('john',)
+INFO     DBClient:db_client.py:25 Query result: [('john', 'john@example.com')]
+INFO     DBClient:db_client.py:30 Closing DB connection

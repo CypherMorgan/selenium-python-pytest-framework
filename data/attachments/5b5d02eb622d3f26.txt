@@ -1,0 +1,4 @@
+INFO     TestRunner:conftest.py:32 Running tests on environment: dev
+INFO     APIClient:api_client.py:12 Initialized APIClient with base_url: http://127.0.0.1:8000
+INFO     APIClient:api_client.py:16 GET Request → http://127.0.0.1:8000/users | params=None
+INFO     APIClient:api_client.py:20 Response Status → 200

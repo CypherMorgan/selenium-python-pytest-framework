@@ -1,0 +1,11 @@
+INFO     APIClient:api_client.py:12 Initialized APIClient with base_url: http://127.0.0.1:8000
+INFO     APIDBTest:test_api_db_validation.py:13 Fetching user from API
+INFO     APIClient:api_client.py:16 GET Request → http://127.0.0.1:8000/users/1 | params=None
+INFO     APIClient:api_client.py:20 Response Status → 200
+INFO     APIDBTest:test_api_db_validation.py:19 API Response: {'id': 1, 'username': 'john', 'email': 'john@example.com'}
+INFO     DBClient:db_client.py:14 Connecting to DB: test_data/test.db
+INFO     APIDBTest:test_api_db_validation.py:24 Fetching user from DB
+INFO     DBClient:db_client.py:18 Executing query: SELECT username, email FROM users WHERE id = ? | params=(1,)
+INFO     DBClient:db_client.py:25 Query result: [('john', 'john@example.com')]
+INFO     DBClient:db_client.py:30 Closing DB connection
+INFO     APIDBTest:test_api_db_validation.py:32 DB Data: [('john', 'john@example.com')]

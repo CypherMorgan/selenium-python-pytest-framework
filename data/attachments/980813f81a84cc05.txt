@@ -1,8 +1,0 @@
-INFO     WDM:logger.py:11 ====== WebDriver manager ======
-INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
-INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
-INFO     WDM:logger.py:11 Driver [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117/chromedriver-linux64/chromedriver] found in cache
-INFO     BaseClass:test_login.py:21 Testing login with user: 'wrong_user'
-INFO     BaseClass:test_login.py:22 Test data -> username: 'wrong_user', password: 'wrong_pass', expected: 'failure'
-INFO     BaseClass:test_login.py:33 Login response message: 'your username is invalid!'
-INFO     BaseClass:test_login.py:55 Login failure validated

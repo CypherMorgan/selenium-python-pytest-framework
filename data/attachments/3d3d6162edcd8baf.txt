@@ -1,3 +1,4 @@
+INFO     TestRunner:conftest.py:45 Initializing WebDriver
 INFO     WDM:logger.py:11 ====== WebDriver manager ======
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
@@ -9,7 +10,12 @@ INFO     WDM:logger.py:11 About to download new driver from https://storage.goog
 INFO     WDM:logger.py:11 Driver downloading response is 200
 INFO     WDM:logger.py:11 Get LATEST chromedriver version for google-chrome
 INFO     WDM:logger.py:11 Driver has been saved in cache [/home/runner/.wdm/drivers/chromedriver/linux64/147.0.7727.117]
-INFO     BaseClass:test_login.py:21 Testing login with user: 'tomsmith'
-INFO     BaseClass:test_login.py:22 Test data -> username: 'tomsmith', password: 'SuperSecretPassword!', expected: 'success'
-INFO     BaseClass:test_login.py:33 Login response message: 'you logged into a secure area!'
-INFO     BaseClass:test_login.py:44 Login success validated
+INFO     TestRunner:conftest.py:50 Opening URL: https://the-internet.herokuapp.com/login
+INFO     LoginTest:test_login.py:20 Testing login with user: 'tomsmith'
+INFO     LoginTest:test_login.py:21 Test data -> username: 'tomsmith', password: 'SuperSecretPassword!', expected: 'success'
+INFO     LoginTest:test_login.py:26 Entering username
+INFO     LoginTest:test_login.py:29 Entering password
+INFO     LoginTest:test_login.py:32 Clicking login button
+INFO     LoginTest:test_login.py:37 Login response message: 'you logged into a secure area!'
+INFO     LoginTest:test_login.py:48 Login success validated
+INFO     TestRunner:conftest.py:56 Quitting WebDriver
