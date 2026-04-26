@@ -63,3 +63,7 @@ dist/
 
 # Local config overrides (if you create them later)
 config/local_config.json
+
+#allure reports
+allure-results/
+allure-report/

@@ -1,3 +1,4 @@
+import allure
 import pytest
 from framework.core.driver_factory import DriverFactory
 from framework.core.config_loader import ConfigLoader
@@ -33,15 +34,24 @@ def driver(config):
 
 @pytest.hookimpl(hookwrapper=True)
 def pytest_runtest_makereport(item, call):
+
     outcome = yield
     report = outcome.get_result()
 
     if report.when == "call" and report.failed:
+
         driver = item.funcargs.get("driver")
 
         if driver:
             screenshot_path = take_screenshot(driver, item.name)
+
             print(f"\nScreenshot saved at: {screenshot_path}")
+
+            allure.attach.file(
+                screenshot_path,
+                name="screenshot",
+                attachment_type=allure.attachment_type.PNG
+            )
 
             if hasattr(report, "extra"):
                 from pytest_html import extras
