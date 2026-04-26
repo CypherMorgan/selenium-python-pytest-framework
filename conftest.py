@@ -13,11 +13,25 @@ def pytest_addoption(parser):
         help="Environment to run tests against"
     )
 
+    parser.addoption(
+        "--browser",
+        action="store",
+        default=None,
+        help="Browser to run tests on (chrome/firefox)"
+    )
+
 
 @pytest.fixture(scope="session")
 def config(request):
     env = request.config.getoption("--env")
-    return ConfigLoader(env)
+    browser_override = request.config.getoption("--browser")
+
+    config = ConfigLoader(env)
+
+    if browser_override:
+        config.config["browser"]["name"] = browser_override
+
+    return config
 
 
 @pytest.fixture(scope="class")
