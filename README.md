@@ -9,7 +9,6 @@
 ![Newman](https://img.shields.io/badge/Newman-CLI-blue)
 ![SQLite](https://img.shields.io/badge/SQLite-DB-lightgrey?logo=sqlite)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-CI/CD-blue?logo=githubactions)
-![CI](https://github.com/cyphermorgan/selenium-python-pytest-framework/actions/workflows/main.yml/badge.svg)
 ![Status](https://img.shields.io/badge/status-active-success)
 ![Tests](https://img.shields.io/badge/tests-automated-brightgreen)
 ![Coverage](https://img.shields.io/badge/coverage-UI%20%7C%20API%20%7C%20DB-blue)
@@ -27,7 +26,7 @@ This framework demonstrates how modern QA systems validate applications across *
 ---
 
 ## 🔗 Live Reports
-- Allure Report: https://cyphermorgan.github.io/selenium-python-pytest-framework/
+- Allure Report: https://cyphermorgan.github.io/fullstack-qa-automation-framework/
 
 # 🔥 Key Features
 
@@ -92,7 +91,7 @@ This framework demonstrates how modern QA systems validate applications across *
 # 🧱 Project Structure
 
 ```bash
-selenium-python-pytest-framework
+fullstack-qa-automation-framework
 │
 ├── tests/
 │   ├── ui/
@@ -198,7 +197,7 @@ allure serve allure-results
 ```
 
 👉 CI Report (GitHub Pages):
-https://cyphermorgan.github.io/selenium-python-pytest-framework/
+https://cyphermorgan.github.io/fullstack-qa-automation-framework/
 
 ---
 
