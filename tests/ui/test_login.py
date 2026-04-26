@@ -1,16 +1,15 @@
 import pytest
 from pages.login_page import LoginPage
 from framework.core.data_reader import get_login_test_data
-from framework.core.base_class import BaseClass
+from framework.utils.logger import get_logger
 
+logger = get_logger("LoginTest")
 
 test_data = get_login_test_data()
 
 
 @pytest.mark.parametrize("data", test_data)
 def test_login(driver, data):
-
-    logger = BaseClass().get_logger()
 
     login_page = LoginPage(driver)
 
@@ -24,8 +23,13 @@ def test_login(driver, data):
     )
 
     try:
+        logger.info("Entering username")
         login_page.enter_username(username)
+
+        logger.info("Entering password")
         login_page.enter_password(password)
+
+        logger.info("Clicking login button")
         login_page.click_login()
 
         message = login_page.get_message().lower().replace("×", "").strip()
@@ -55,6 +59,5 @@ def test_login(driver, data):
             logger.info("Login failure validated")
 
     except Exception as e:
-
         logger.error(f"Test execution failed due to error: {str(e)}")
         raise
